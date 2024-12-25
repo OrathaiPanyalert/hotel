@@ -1,20 +1,34 @@
 import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Carousel from './page/Carousel';
 import Home from './page/Home';
 import Footer from './components/Footer';
+import Room from './page/Room';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Router>
+        {/* Navbar - will be visible on all pages */}
+        <Navbar />
+        
+        {/* Carousel - if you want this to be only visible on the Home page, move it inside the Home route */}
+        <Carousel />
 
-      <Carousel/>
-      <Home/>
-      <Footer/>
+        <Routes>
+          {/* Home route */}
+          <Route path="/home" element={<Home />} />
+          
+          {/* Room route */}
+          <Route path="/room" element={<Room />} />
+        </Routes>
+      
+        <Footer />
+      </Router>
     </div>
   );
 }
+
 
 export default App;
