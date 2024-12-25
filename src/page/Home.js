@@ -40,7 +40,7 @@ function Home() {
                                 }}
                             />
                             <div className="card-img-overlay" style={{ position: 'absolute', bottom: '20px', left: '20px' }}>
-                                <h5 className="card-title text-body" style={{ marginTop: '165px' }}>Deluxe Room</h5>
+                                <h5 className="card-title text-body" style={{ marginTop: '160px', marginLeft: 50}}>Deluxe Room</h5>
                                 <a href="\room">
                                     <button
                                         style={{
@@ -76,8 +76,8 @@ function Home() {
                                     height: '300px',
                                 }}
                             />
-                            <div className="card-img-overlay" style={{ position: 'absolute', bottom: '20px', left: '20px' }}>
-                                <h5 className="card-title text-body" style={{ marginTop: '165px' }}>Premier Room</h5>
+                            <div className="card-img-overlay" style={{ position: 'absolute', bottom: '20px', left: '0px' }}>
+                                <h5 className="card-title text-body" style={{ marginTop: '160px', marginLeft: 50 }}>Premier Room</h5>
                                 <a href="\room">
                                     <button
                                         style={{
@@ -114,7 +114,7 @@ function Home() {
                                 }}
                             />
                             <div className="card-img-overlay" style={{ position: 'absolute', bottom: '20px', left: '5px', width: '100%' }}>
-                                <h5 className="card-title text-body" style={{ marginTop: '165px' }}>Junior Suite</h5>  {/* Reduced margin-bottom to bring it closer to the button */}
+                                <h5 className="card-title text-body" style={{ marginTop: '160px', marginLeft: 65 }}>Junior Suite</h5>  {/* Reduced margin-bottom to bring it closer to the button */}
                                 <a href="\room">
                                     <button
                                         style={{
