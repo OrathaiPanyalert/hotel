@@ -5,6 +5,7 @@ import Carousel from './page/Carousel';
 import Home from './page/Home';
 import Footer from './components/Footer';
 import Room from './page/Room';
+import Booking from './page/Booking';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           
           {/* Room route */}
           <Route path="/room" element={<Room />} />
+          <Route path="/booking" element={<Booking />} />
         </Routes>
       
         <Footer />
